@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>御神籤（おみくじ）</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="shrine-container">
+        <header>
+            <h1>令和 開運おみくじ</h1>
+        </header>
+
+        <main>
+            <div class="omikuji-box">
+                <div id="result-area" class="result hidden">
+                    <p id="fortune-text"></p>
+                </div>
+                <button id="draw-btn" class="draw-btn">おみくじを引く</button>
+            </div>
+        </main>
+
+        <div class="controls">
+            <button id="bgm-btn" class="icon-btn" aria-label="BGM Toggle">🎵 BGM ON/OFF</button>
+            <audio id="bgm-player" loop>
+                <source src="assets/bgm.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
